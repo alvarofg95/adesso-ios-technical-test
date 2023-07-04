@@ -11,7 +11,7 @@ struct CoordinadesView: View {
     @State private var latitude: String = ""
     @State private var longitude: String = ""
     var body: some View {
-        VStack {
+        NavigationStack {
             Text("Weather form").font(.title).foregroundColor(.blue).fontWeight(.bold)
             VStackLayout {
                 TextField("Latitude", text: $latitude)

@@ -17,7 +17,7 @@ struct HomeView: View {
                     .foregroundColor(Color.blue)
                     .font(.largeTitle)
                     .multilineTextAlignment(.leading)
-                Text("To start de Test, press START")
+                Text("To start the Test, press START")
                     .padding(.vertical, 30.0)
                     .font(.title)
                 NavigationLink("Start", destination: CoordinadesView())
