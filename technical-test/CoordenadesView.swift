@@ -29,7 +29,7 @@ struct CoordinadesView: View {
                                 .stroke(Color.gray, lineWidth: 1)
                         )
             }.padding(.vertical, 40.0)
-            NavigationLink("Send Data", destination: WeatherView())
+            NavigationLink("Send Data", destination: WeatherView(longitude: Double(self.latitude) ?? 0, latitude: Double(self.longitude) ?? 0))
                 .frame(width: 120.0, height: 40.0)
                 .background(.blue)
                 .foregroundColor(.white)
